@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*start navbar */
+.navbar {
+    top: 0;
+    width:100%;
+    position:fixed;
+    border-radius:0  0 100px 100px ;
+    background: linear-gradient(to right, #3bc053 25%,#2086c2 60%);
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.navbar .icon1
+{
+    padding-top: 15px;
+
+}
+.icon_head
+{
+    position: relative;
+    bottom: 11px;
+    right: 20px;
+}
+.navbar .icon1 i{
+    float:left;
+    padding-top:19px;
+    margin-left :0px;
+    color: #fff;
+}
+
+.navbar .par {
+    float:left;
+    margin-top:27px ;
+    margin-left:15px ;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size:30px ;
+}
+.navbar .links
+{
+    list-style:none;
+    float:right;
+
+}
+.navbar .links li
+{
+    float:left;
+    padding:25px;
+    margin-left: 10px;
+}
+.navbar .links li a {
+    color:#fff;
+    text-decoration:none;
+    font-family:arial ;
+    font-size:18px ;
+}
+
+
+/*end navbar*/
+/*start slider*/
+
+.slider{
+    height:850px;
+    background: url(../img/bg_2.jpg.webp) no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    text-align:center;
+
+}
+.slider .intro {
+    padding-top:260px;
+    text-align:center;
+    margin-left:200px;
+    text-indent:10px;
+    color:#fff;
+    font-family:arial;
+}
+.slider .intro h1{
+
+    font-size:50px;
+
+
+}
+
+.slider .intro p{
+    font-size:22px;
+}
+.slider .book{
+   margin-left:210px;
+   padding:15px ;
+
+}
+.slider .book select {
+    border-radius:47px;
+    border:none;
+    color: rgb(146, 139, 139);
+    border:15px solid #fff;
+
+
+
+
+
+}
+.slider .book .b11{
+    color:#fff;
+    text-decoration:none;
+    font-family:arial;
+    font-weight:bold;
+    background-color:#3bc053  ;
+    border:15px solid #3bc053 ;
+    text-transform: uppercase;
+    border-radius:50px;
+    width: 200px;
+    margin-top: 35px;
+    margin-left: 20px;
+    transition: .5s ease-in-out all;
+}
+.slider .book .b11:hover{
+    background-color:#2086c2;
+    border:15px solid #2086c2;
+    border-radius:50px;
+    transition: .5s ease-in-out all;
+}
+.display
+{
+    display: none;
+}
+/*end slider*/
+/*start gallary */
+
+.gallary {
+	padding-top:70px;
+	/*padding-bottom:50px*/
+}
+.gallary  h2{
+    font-size:33px;
+	text-align:center;
+    padding:20px;
+    color: #3bc053;
+}
+
+.gallary .our_photo{
+	overflow:hidden
+}
+.gallary  .our_photo div{
+	float:left;
+	margin-left:20px;
+	width:30%;
+	margin-bottom:10px;
+	text-align:center;
+    padding:15px;
+}
+.gallary .our_photo div img{
+	margin-left:50px;
+    /*margin-bottom: 20px;*/
+	padding:2px;
+	background-color:#2086c2;
+	border:1px solid #2086c2;
+	box-shadow:7px 7px 7px #71b4db;
+}
+.gallary .our_photo div img:hover {
+    transform:scale(1.1);
+   opacity:50%;
+   transition:0.5s;
+
+}
+
+/*end gallary */
+/*start part_yara */
+
+.yara_part .form_yara{
+    width:40%;
+    float:right;
+    padding:35px ;
+
+}
+.yara_part .form_yara .yara input{
+    display:block;
+    width:100%;
+    padding:20px;
+    margin-bottom:20px ;
+    border:2px solid #878f89;
+}
+.yara_part .form_yara .yara textarea {
+	padding:10px;
+	width:100%;
+	margin-bottom:10px;
+	height:130px;
+    border:2px solid #878f89;
+}
+.yara_part .form_yara .yara input[type="submit"]{
+	background-color:#3bc053;
+	color:#fff;
+	border:0;
+	margin-top:10px;
+    width:50%;
+    margin-left:140px ;
+    border-radius:3px;
+    cursor: pointer;
+	font-weight: bold;
+}
+.yara_part .form_yara .yara input[type="submit"]:hover{
+    background:#fff;
+    color:#3bc053;
+    border:1px solid #3bc053;
+    font-weight: bold;
+
+}
+
+.yara_part .map_yara{
+    width:60%;
+    padding: 20px;
+    margin-left:40px ;
+
+}
+/*end yara_part*/
+/*start footer*/
+footer
+{
+    background-color: #334752;
+    height: 70px;
+    position: relative;
+}
+footer p
+{
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-weight: 500;
+}
+footer p span
+{
+    color: var(--main-color);
+}
+@media (max-width:767px) {
+    footer p
+    {
+        font-size: 12px;
+    }
+}
+
+/*end footer*/
